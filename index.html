@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar d-flex justify-content-end d-none" id="out" style="background-color: #FFCCE1;">
+        <button class="btn btn-outline-dark me-4" id="outbtn">Logout</button>
+      </nav>
+    <div class="w-50 m-auto mt-5 p-5 shadow text-center">
+        <div id="check" class="d-block d-flex flex-column gap-2 ">
+            <form class="d-flex flex-column gap-3">
+            <input type="text" class="form-control d-none" id="name" placeholder="Enter your Name " required>
+            <input type="email" class="form-control" id="email" placeholder="Enter your Email" required>
+           <div class="position-relative"> <input type="password" class="form-control" id="pass" placeholder="Enter your Password" required oninput="showeye()"><span class="position-absolute d-none" id="eye" ><i class="fa-solid fa-eye" onclick="toggle()"></i></span></div>
+            <button class="btn btn-outline-dark mt-4" onclick="Home()" id="logbtn">Login</button>
+            <button class="btn btn-outline-info d-none" id="signbtn" onclick="getUsers()">Sign Up</button>
+             </form>
+            <p class="text-danger-emphasis d-none" id="valid">Please enter valid email</p>
+            <p class="text-success d-none" id="suc">Success!</p>
+            <p >Don’t have an account?</p>
+            <a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" id="sign" onclick="replaceup()">Sign up</a>
+            <a href="#" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover d-none" id="logn" onclick="replacein()">Sign in</a>
+        </div>
+        <div id="home" class="d-none text-center">
+            <img src="./style/Celebrate-With-Purpose.webp" alt="Welcome">
+            <h1 id="wel"></h1>
+        </div>
+    </div>
+    <script src="./style/index.js"></script>
+</body>
+</html>

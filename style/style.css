@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+body{
+    background-image: url(./download\ .jpeg)
+}
+span{
+    right:3%;
+    top:10%;
+    cursor: pointer;
+}
+h1{
+    color:#F72C5B;
+}
